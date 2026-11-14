@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffe5f0">
+<title>Happy Children's Day, My Little Bacha 💗</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap');
+:root{--pink:#ff6f9f;--hot:#ff4f88;--soft:#ffe4ef;--cream:#fff9f1;--brown:#57342f;--peach:#ffd9c8;--lav:#eee5ff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--brown);font-family:'Nunito',sans-serif;background:linear-gradient(145deg,#fff6fa,#fff0e9 48%,#f9efff);overflow-x:hidden}
+button{font:inherit;cursor:pointer}
+nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px clamp(16px,5vw,65px);background:#fff8f3d9;backdrop-filter:blur(16px);border-bottom:1px solid #ffd7e5}
+.brand{font-family:'Baloo 2';font-size:1.35rem;font-weight:800;white-space:nowrap}.brand span{color:var(--hot)}
+.navlinks{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.navlinks a{color:var(--brown);text-decoration:none;font-weight:800;padding:9px 14px;border-radius:30px;font-size:.9rem}
+.navlinks a:hover,.navlinks a.active{background:#ff6f9f;color:white}
+.pill{border:1px solid #ffc4d7;background:#fff;color:var(--hot);padding:10px 16px;border-radius:30px;font-weight:900;box-shadow:0 4px 0 #f7c3d4}
+.hero{min-height:calc(100vh - 66px);position:relative;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:25px;padding:55px clamp(18px,7vw,95px) 70px;overflow:hidden}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);z-index:-1}
+.hero:before{width:400px;height:400px;background:#ffdbe9;left:-170px;top:10px}
+.hero:after{width:330px;height:330px;background:#fff0bd;right:-120px;bottom:0}
+.eyebrow{display:inline-block;background:#fff;border:1px solid #ffd4e2;border-radius:30px;padding:8px 15px;font-weight:900;color:#e95b8c;box-shadow:0 5px 0 #f7d6e2}
+h1{font-family:'Baloo 2';font-size:clamp(3.1rem,7vw,6.5rem);line-height:.93;margin:20px 0 12px;letter-spacing:-2px;color:#58332d}
+h1 em{font-style:normal;color:#ff5d91;text-shadow:3px 4px 0 #ffd0df}
+.subtitle{font-size:clamp(1.05rem,2vw,1.25rem);line-height:1.8;max-width:570px;font-weight:700;color:#78544c}
+.bacha{display:inline-block;background:#ffe7a7;padding:3px 13px;border-radius:14px;transform:rotate(-2deg);color:#8b4b38}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.primary,.secondary{border:0;border-radius:40px;padding:14px 24px;font-weight:900;transition:.2s;box-shadow:0 6px 0 #e7b7c8}
+.primary{background:linear-gradient(135deg,#ff7da7,#ff4f88);color:white}
+.secondary{background:#fff;color:#d94e80;border:1px solid #ffd0df}
+.primary:hover,.secondary:hover{transform:translateY(-4px);filter:saturate(1.1)}
+.hero-art{position:relative;text-align:center;animation:bob 4s ease-in-out infinite}
+.hero-art img{width:min(100%,540px);max-height:530px;object-fit:contain;border-radius:44% 44% 35% 35%;filter:drop-shadow(0 18px 15px #e8b4c8);mix-blend-mode:multiply}
+.art-tag{position:absolute;bottom:5%;left:0;background:#fff9e8;padding:13px 18px;border-radius:18px;border:2px solid #f6c7a0;font-family:'Baloo 2';font-weight:800;transform:rotate(-6deg);box-shadow:0 5px 0 #eec8b6}
+.float{position:absolute;animation:float 5s ease-in-out infinite;pointer-events:none}
+.f1{top:12%;left:7%;font-size:2rem}.f2{right:8%;top:18%;font-size:2.4rem;animation-delay:1s}.f3{left:48%;bottom:8%;font-size:1.8rem;animation-delay:2s}
+.section{padding:75px clamp(18px,7vw,95px);text-align:center}
+.section h2{font-family:'Baloo 2';font-size:clamp(2.2rem,4vw,3.4rem);margin:0 0 10px}
+.section-lead{color:#8b6b65;font-weight:700;margin:0 auto 32px;max-width:620px;line-height:1.7}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:17px;max-width:1100px;margin:0 auto}
+.card{background:#fffaf7;border:1px solid #ffd9e4;border-radius:25px;padding:24px 16px;box-shadow:0 8px 0 #f5d4df;transition:.25s;min-height:190px}
+.card:hover{transform:translateY(-8px) rotate(-1deg);box-shadow:0 14px 0 #f5d4df}
+.card .emoji{font-size:2.8rem;display:block;margin-bottom:8px;animation:wiggle 3s infinite}
+.card h3{font-family:'Baloo 2';font-size:1.35rem;margin:4px 0}
+.card p{font-size:.93rem;color:#8b6b65;font-weight:700;margin:0}
+.message-wrap{background:linear-gradient(135deg,#ffe1ed,#fff2df);border:2px dashed #ffb6cf;border-radius:32px;max-width:850px;margin:auto;padding:35px 28px;box-shadow:0 10px 0 #f4d3df}
+.message-wrap p{font-size:1.12rem;line-height:1.9;font-weight:800}
+.signature{font-family:'Baloo 2';font-size:1.5rem;color:#f05b91}
+.promise{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.promise span{background:#fff;border-radius:25px;padding:10px 15px;font-weight:900;color:#d85a86}
+.love-box{max-width:650px;margin:0 auto;background:#fff;border-radius:25px;padding:25px;border:1px solid #ffd7e4;box-shadow:0 8px 0 #f3d1dd}
+.meter{height:18px;background:#ffe3ed;border-radius:30px;overflow:hidden;margin:18px 0 8px}
+.meter span{display:block;height:100%;width:100%;background:linear-gradient(90deg,#ff9fba,#ff4f88);border-radius:30px;animation:fill 2s ease}
+.love-number{font-family:'Baloo 2';font-size:1.7rem;color:#f04f88}
+footer{text-align:center;padding:35px 15px 50px;background:#ffe5ef;font-weight:800}
+footer .big{font-family:'Baloo 2';font-size:1.6rem}
+#surprise{display:none;position:fixed;inset:0;background:#4a293b88;z-index:50;place-items:center;padding:20px}
+#surprise.show{display:grid}
+.modal{max-width:460px;width:100%;background:#fff8f3;border-radius:30px;padding:32px;text-align:center;border:3px solid #ffc7d9;box-shadow:0 15px 0 #e7aabe;animation:pop .35s ease}
+.modal .bigemoji{font-size:4rem}
+.modal h2{font-family:'Baloo 2';font-size:2rem;margin:5px}
+.modal p{font-weight:800;line-height:1.7}
+.close{border:0;background:#ff6f9f;color:white;padding:11px 22px;border-radius:25px;font-weight:900}
+#heart-layer{position:fixed;inset:0;pointer-events:none;z-index:60;overflow:hidden}
+.heart{position:absolute;bottom:-30px;font-size:22px;animation:rise 2.5s ease-out forwards}
+.music-note{position:fixed;right:18px;bottom:18px;border:0;border-radius:50%;width:55px;height:55px;background:#ff6f9f;color:white;font-size:1.3rem;box-shadow:0 5px 0 #d64e7d;z-index:30}
+@keyframes bob{50%{transform:translateY(-13px) rotate(1deg)}}
+@keyframes float{50%{transform:translateY(-18px) rotate(12deg)}}
+@keyframes wiggle{0%,90%,100%{transform:rotate(0)}94%{transform:rotate(-12deg)}97%{transform:rotate(12deg)}}
+@keyframes fill{from{width:0}to{width:100%}}
+@keyframes pop{from{transform:scale(.7);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes rise{to{transform:translateY(-110vh) rotate(30deg);opacity:0}}
+@media(max-width:850px){.hero{grid-template-columns:1fr;text-align:center;padding-top:45px}.hero-copy{order:1}.hero-art{order:0}.hero-art img{max-height:340px}.subtitle{margin:auto}.actions{justify-content:center}.cards{grid-template-columns:repeat(2,1fr)}nav{flex-wrap:wrap;justify-content:center}.brand{width:100%;text-align:center}.navlinks{order:3;width:100%}}
+@media(max-width:480px){.cards{gap:12px}.card{padding:18px 10px;min-height:170px}.navlinks a{padding:7px 10px;font-size:.8rem}.hero{padding-left:18px;padding-right:18px}.section{padding-top:55px;padding-bottom:55px}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="brand">🐻 Bubu <span>&</span> 🐰 Dudu ♡</div>
+  <div class="navlinks">
+    <a class="active" href="#home">Home</a><a href="#moments">Cute Moments</a><a href="#letter">For You</a><a href="#promise">My Promise</a>
+  </div>
+  <button class="pill" onclick="openSurprise()">💗 Your Surprise</button>
+</nav>
+
+<main>
+<section class="hero" id="home">
+  <span class="float f1">💗</span><span class="float f2">✨</span><span class="float f3">🌼</span>
+  <div class="hero-copy">
+    <span class="eyebrow">A tiny celebration for my favourite human ♡</span>
+    <h1>Happy<br><em>Children's Day!</em></h1>
+    <p class="subtitle">To my favourite little <span class="bacha">Bacha Bacha</span> 🧸<br>
+      You may be a grown-up to the world, but to me you'll always be my adorable little kiddo. Keep smiling, stay silly, and never lose that cute little spark of yours. 💕</p>
+    <div class="actions">
+      <button class="primary" onclick="showerHearts()">I Love You! 💖</button>
+      <button class="secondary" onclick="document.querySelector('#letter').scrollIntoView()">Read your letter 💌</button>
+    </div>
+  </div>
+  <div class="hero-art">
+    <img src="bubu-dudu-hero.jpg" alt="Cute Bubu and Dudu cuddling together">
+    <div class="art-tag">Bacha forever & always ♡</div>
+  </div>
+</section>
+
+<section class="section" id="moments">
+  <h2>Pick a little dose of love 💞</h2>
+  <p class="section-lead">Tap any card, silly girl. Bubu and Dudu have prepared some extra cuddles for you!</p>
+  <div class="cards">
+    <button class="card" onclick="showMessage('🤗','A BIG BEAR HUG!','Imagine Bubu wrapping you in the warmest hug ever. Squeezeee! You are loved more than you know.')"><span class="emoji">🧸</span><h3>Send a Hug</h3><p>One squishy virtual hug</p></button>
+    <button class="card" onclick="showMessage('😘','A LITTLE KISS!','Dudu says: one kiss on your forehead, one on each cheek, and unlimited kisses whenever you ask. Muah!')"><span class="emoji">💋</span><h3>Send a Kiss</h3><p>Muah! Muah! Muah!</p></button>
+    <button class="card" onclick="showMessage('💝','A POCKET FULL OF LOVE','If I could, I would send you a million tiny hearts so you never forget how special you are to me.')"><span class="emoji">💗</span><h3>Lots of Love</h3><p>Unlimited, no expiry date</p></button>
+    <button class="card" onclick="showMessage('🎁','A SURPRISE FOR YOU!','Your gift is a promise: more laughs, more silly moments, more care, and a whole lot of love. Open your arms!')"><span class="emoji">🎀</span><h3>Surprise Gift</h3><p>A little something from me</p></button>
+  </div>
+</section>
+
+<section class="section" id="letter">
+  <h2>A tiny letter for my tiny troublemaker 💌</h2>
+  <p class="section-lead">Okay, listen up, my little bacha. This one's straight from my heart.</p>
+  <div class="message-wrap">
+    <div style="font-size:2.5rem">🐻🤍🐰</div>
+    <p>Happy Children's Day, meri cute si bachi! ❤️<br>
+    I know you act all grown-up sometimes, but for me you'll always be my little bacha — the one I want to pamper, tease, make smile, and protect from all the world's worries. Never stop being playful, dramatic, naughty, and wonderfully you. I hope life gives you endless reasons to smile, and whenever it doesn't, I hope I can be one of them. 🥺</p>
+    <p>So today, no being serious. Just be my cute little kiddo and let me spoil you with love. Deal? 🧸</p>
+    <div class="signature">Forever your Bubu ♡</div>
+  </div>
+</section>
+
+<section class="section" id="promise">
+  <h2>One tiny promise 🌷</h2>
+  <div class="love-box">
+    <div style="font-size:2.6rem">💗</div>
+    <h3 style="font-family:'Baloo 2';font-size:1.6rem;margin:5px">My love for you is...</h3>
+    <div class="meter"><span></span></div>
+    <div class="love-number">100% and still growing ∞</div>
+    <p style="font-weight:800;line-height:1.7">I'll keep cheering for you, listening to your little stories, laughing at your silly jokes, and reminding you that you are precious — on Children's Day and every ordinary day too.</p>
+    <div class="promise"><span>♡ Your safe place</span><span>♡ Your biggest fan</span><span>♡ Your forever Bubu</span></div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="big">Made with lots of love, just for you 💗</div>
+  <p>Happy Children's Day, my little Bacha!</p>
+  <div style="font-size:1.7rem">🐻 💕 🐰</div>
+</footer>
+
+<div id="surprise" onclick="if(event.target.id==='surprise')closeSurprise()">
+  <div class="modal">
+    <div class="bigemoji" id="modalEmoji">🎁</div>
+    <h2 id="modalTitle">A surprise for you!</h2>
+    <p id="modalText">You are my favourite little person. Sending you the biggest hug!</p>
+    <button class="close" onclick="closeSurprise()">Awww, okay! 💗</button>
+  </div>
+</div>
+<div id="heart-layer"></div>
+<button class="music-note" title="Make a little sparkle" onclick="showerHearts()">💖</button>
+<script>
+function showerHearts(){
+  const layer=document.getElementById('heart-layer');
+  const symbols=['💗','💕','💖','✨','🌸','🧸'];
+  for(let i=0;i<24;i++){
+    const el=document.createElement('span');el.className='heart';
+    el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+    el.style.left=Math.random()*100+'vw';el.style.animationDelay=Math.random()*.8+'s';
+    el.style.fontSize=(18+Math.random()*22)+'px';layer.appendChild(el);
+    setTimeout(()=>el.remove(),3500);
+  }
+}
+function showMessage(emoji,title,message){
+  document.getElementById('modalEmoji').textContent=emoji;
+  document.getElementById('modalTitle').textContent=title;
+  document.getElementById('modalText').textContent=message;
+  document.getElementById('surprise').classList.add('show');showerHearts();
+}
+function openSurprise(){showMessage('🎁','A special gift for my Bacha!','Surpriseee! Your gift is a lifetime supply of hugs, forehead kisses, silly jokes, and someone who thinks you are the cutest human ever. I love you! 💗')}
+function closeSurprise(){document.getElementById('surprise').classList.remove('show')}
+document.addEventListener('pointerdown',e=>{
+  if(e.target.closest('button,a'))return;
+  const s=document.createElement('span');s.textContent=['💗','✨','🌸'][Math.floor(Math.random()*3)];
+  s.style.cssText=`position:fixed;left:${e.clientX}px;top:${e.clientY}px;pointer-events:none;z-index:80;font-size:22px;animation:tapPop .8s ease forwards`;
+  document.body.appendChild(s);setTimeout(()=>s.remove(),850);
+});
+const style=document.createElement('style');style.textContent='@keyframes tapPop{to{transform:translateY(-35px) scale(1.6);opacity:0}}';document.head.appendChild(style);
+</script>
+</body>
+</html>
